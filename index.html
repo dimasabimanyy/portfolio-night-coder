@@ -5,34 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <div class="logo"></div>
-      </nav>
-      <section id="hero">
-        <div class="my-image"></div>
-        <div class="about">
-          <h6>Software Engineer</h6>
-          <h1>Dimas Abimanyu</h1>
-          <p>
-            Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-            convallis, risus non condimentum gravida, odio mauris ullamcorper
-            felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
-            a placerat sapien pretium eu.
-          </p>
-          <div class="btn-wrap">
-            <div class="btn">Download CV</div>
-            <div class="btn">Contact</div>
+    <section class="main-container">
+      <!-- Header -->
+      <header>
+        <nav>
+          <div class="nav-wrapper container">
+            <h4 class="logo">Dimas <span>Abimanyu</span></h4>
+            <ul class="nav-links">
+              <li><a href="">About Me</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
-    </header>
+        </nav>
+        <section id="hero">
+          <div class="my-image">
+            <img src="images/guy.jpg" alt="Dimas Abimanyu Picture" />
+          </div>
+          <div id="about">
+            <h5>Software Engineer</h5>
+            <h1>Dimas Abimanyu</h1>
+            <p class="about-me">
+              Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
+              convallis, risus non condimentum gravida, odio mauris ullamcorper
+              felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia
+              urna, a placerat sapien pretium eu.
+            </p>
+            <div class="btn-wrap">
+              <a href="#" class="btn blue-border cv">Download CV</a>
+              <a href="#" class="btn">Contact</a>
+            </div>
+          </div>
+        </section>
+      </header>
 
-    <!-- Main Content -->
+      <!-- Main Content -->
+      <main>
+        <!-- Skills -->
+        <section id="skills">
+          <div class="skill-col">
+            <h4 class="section-title">
+              Design Skills
+              <div class="grey-line"><div class="blue-fill"></div></div>
+            </h4>
+            <div class="title-line"></div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>UI/UX Design</h6>
+                <h6 class="percent">95%</h6>
+              </div>
+              <div class="bar">
+                <div class="ui-ux"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>Print Design</h6>
+                <h6 class="percent">75%</h6>
+              </div>
+              <div class="bar">
+                <div class="print"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>Graphic Design</h6>
+                <h6 class="percent">85%</h6>
+              </div>
+              <div class="bar">
+                <div class="graphic"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>Logo Design</h6>
+                <h6 class="percent">90%</h6>
+              </div>
+              <div class="bar">
+                <div class="logo-design"></div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Footer -->
+          <!-- Coding Skill  -->
+          <div class="skill-col">
+            <h4 class="section-title">
+              Coding Skills
+              <div class="grey-line"><div class="blue-fill"></div></div>
+            </h4>
+            <div class="title-line"></div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>HTML / CSS</h6>
+                <h6 class="percent">95%</h6>
+              </div>
+              <div class="bar">
+                <div class="ui-ux"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>Javascript</h6>
+                <h6 class="percent">75%</h6>
+              </div>
+              <div class="bar">
+                <div class="print"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>Laravel</h6>
+                <h6 class="percent">85%</h6>
+              </div>
+              <div class="bar">
+                <div class="graphic"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-title">
+                <h6>React JS</h6>
+                <h6 class="percent">90%</h6>
+              </div>
+              <div class="bar">
+                <div class="logo-design"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+    </section>
   </body>
 </html>
