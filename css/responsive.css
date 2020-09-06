@@ -5,6 +5,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .project {
+    height: 350px;
+  }
+
   #hero {
     width: 90%;
     grid-template-columns: 40% 60%;
@@ -44,6 +48,22 @@
   .portfolio-wrapper,
   .contact-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .project {
+    height: 600px;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .project-thumbnail {
+    height: 300px;
+  }
+
+  .project-desc {
+    height: 50%;
+    position: relative;
+    opacity: 1;
+    z-index: 999;
   }
 
   .footer-wrapper {

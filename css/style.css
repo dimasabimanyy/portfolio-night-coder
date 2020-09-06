@@ -280,7 +280,12 @@ nav {
   transition: 0.4s ease-in;
 }
 
-.project img {
+.project-thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.project-thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -298,13 +303,25 @@ nav {
 
 .project-desc {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   bottom: 0;
   opacity: 0;
   background: #fff;
   transition: 0.4s ease-in;
   padding: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+}
+.project-desc h4 {
+  margin-bottom: 7px;
+}
+.project-desc p {
+  margin-bottom: 14px;
 }
 
 .project:hover .project-desc {
@@ -312,9 +329,11 @@ nav {
 }
 
 .project:hover {
-  -webkit-box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.75); */
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }
 
 /* Contact */
