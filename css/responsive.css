@@ -1,0 +1,57 @@
+@media screen and (max-width: 1250px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #hero {
+    width: 90%;
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #hero {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  .my-image {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #about {
+    text-align: center;
+    width: 100%;
+  }
+
+  .btn-about-wrap {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #hero,
+  #skills,
+  #portfolio,
+  #contact {
+    padding: 2em 0;
+  }
+
+  #skills,
+  .portfolio-wrapper,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    margin: 0 auto 1em;
+  }
+}
