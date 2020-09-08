@@ -37,7 +37,7 @@
   }
 
   .nav-links-wrap {
-    height: 70%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,6 +50,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.1em;
+    color: #fff;
   }
 
   .burger {
@@ -82,6 +83,10 @@
 
   .btn-about-wrap {
     margin: 0 auto;
+  }
+
+  #skills {
+    gap: 4em;
   }
 }
 
