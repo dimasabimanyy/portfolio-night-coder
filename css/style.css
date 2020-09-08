@@ -173,7 +173,7 @@ nav {
 .burger > div {
   width: 30px;
   height: 2px;
-  background-color: var(--mainColor);
+  background-color: var(--mainText);
   margin: 7px;
   transition: all 0.3s;
 }
