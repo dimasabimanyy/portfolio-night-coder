@@ -5,6 +5,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .main-container {
+    margin: 2em auto;
+  }
   .project {
     height: 350px;
   }
@@ -16,6 +19,52 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* Nav */
+  .nav-links {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #172a45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 9;
+  }
+
+  .nav-links-wrap {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links-wrap li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    z-index: 99;
+  }
+  /* Nav end */
+
+  .main-container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
   #hero {
     grid-template-columns: 1fr;
     gap: 1em;
@@ -36,12 +85,36 @@
   }
 }
 
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @media screen and (max-width: 750px) {
   #hero,
   #skills,
   #portfolio,
   #contact {
-    padding: 2em 0;
+    padding: 4em 0;
   }
 
   #skills,
@@ -50,6 +123,9 @@
     grid-template-columns: 1fr;
   }
 
+  .portfolio-wrapper {
+    gap: 3em;
+  }
   .project {
     height: 600px;
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
