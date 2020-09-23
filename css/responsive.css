@@ -22,7 +22,7 @@
   /* Nav */
   .nav-links {
     position: absolute;
-    width: 50%;
+    width: 100%;
     right: 0;
     top: 0;
     height: 100vh;
@@ -49,7 +49,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    font-weight: bold;
   }
 
   .burger {
