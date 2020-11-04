@@ -272,7 +272,7 @@ nav {
 }
 
 .ui-ux {
-  width: 95%;
+  width: 90%;
 }
 
 .print {
@@ -284,6 +284,22 @@ nav {
 }
 
 .logo-design {
+  width: 90%;
+}
+
+.html {
+  width: 98%;
+}
+
+.js {
+  width: 90%;
+}
+
+.laravel {
+  width: 85%;
+}
+
+.react {
   width: 90%;
 }
 
