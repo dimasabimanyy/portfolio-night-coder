@@ -6,22 +6,15 @@
     <title>Dimas Abimanyu - Software Engineer</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-		<meta name="description" content="Personal Portfolio Website Web Developer">
-		<meta name="keywords" content="Software Engineer Portfolio Website">
-		<meta name="author" content="Dimas Abimanyu">
-		<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  
     <!-- Font awesome -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    /><!-- Meta tag -->
+    />
+    <!-- Meta tag -->
   </head>
   <body>
-    <section class="main-container">
+    <div class="main-container">
       <!-- Header -->
       <header>
         <nav>
@@ -30,9 +23,8 @@
             <ul class="nav-links">
               <div class="nav-links-wrap">
                 <li><a href="#about">About Me</a></li>
-                <!-- <li><a href="#skills">Services</a></li> -->
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>   
+                <li><a href="#contact">Contact</a></li>
               </div>
             </ul>
             <div class="burger">
@@ -42,18 +34,21 @@
             </div>
           </div>
         </nav>
+
         <section id="hero">
-          <div class="my-image">
-            <img src="images/me.jpg" alt="Dimas Abimanyu Picture" />
+          <div class="hero-image">
+            <img src="images/me.jpg" alt="Dimas Abimanyu" />
           </div>
-          <div id="about">
+          <div class="hero-info">
             <h5>Software Engineer</h5>
             <h1>Dimas Abimanyu</h1>
-            <p class="about-me">
-              I'm a software engineer based in Medan, Indonesia. Specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+            <p>
+              I'm a software engineer based in Medan, Indonesia. Specializing in
+              building (and occasionally designing) exceptional websites,
+              applications, and everything in between.
             </p>
-            <div class="btn-about-wrap">
-              <a href="#" class="btn blue-border cv">Download CV</a>
+            <div class="hero-info-btn">
+              <a href="#" class="btn btn-blue">Download CV</a>
               <a href="#contact" class="btn">Contact</a>
             </div>
           </div>
@@ -62,98 +57,35 @@
 
       <!-- Main Content -->
       <main class="container">
-        <!-- Skills -->
-        <section id="skills">
-          <div class="skill-col">
-            <h3 class="section-title">
-              Design Skills
-              <div class="grey-line"><div class="blue-fill"></div></div>
-            </h3>
-            <div class="title-line"></div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>UI/UX Design</h6>
-                <h6 class="percent">90%</h6>
-              </div>
-              <div class="bar">
-                <div class="ui-ux"></div>
-              </div>
+        <section id="about">
+          <h3 class="section-title">
+            About me
+            <div class="grey-line"><div class="blue-fill"></div></div>
+          </h3>
+          <div class="about-wrapper">
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                sapiente eum, fuga similique voluptatum quas provident, vitae
+                animi deleniti consectetur impedit sint, ducimus ut quaerat!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Praesentium quidem porro voluptates quos impedit velit debitis
+                ratione consequatur quia assumenda itaque explicabo vel quasi
+                labore nostrum nobis, laudantium, facilis exercitationem
+              </p>
+              <p>Here is a few tech i've been working with recently :</p>
+              <p class="about-tech">
+                HTML & S(CSS), Javascript (ES6), React, Gatsby, Laravel, Vue,
+                Wordpress
+              </p>
             </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>Print Design</h6>
-                <h6 class="percent">75%</h6>
-              </div>
-              <div class="bar">
-                <div class="print"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>Graphic Design</h6>
-                <h6 class="percent">85%</h6>
-              </div>
-              <div class="bar">
-                <div class="graphic"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>Logo Design</h6>
-                <h6 class="percent">90%</h6>
-              </div>
-              <div class="bar">
-                <div class="logo-design"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Coding Skill  -->
-          <div class="skill-col">
-            <h3 class="section-title">
-              Coding Skills
-              <div class="grey-line"><div class="blue-fill"></div></div>
-            </h3>
-            <div class="title-line"></div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>HTML / CSS</h6>
-                <h6 class="percent">98%</h6>
-              </div>
-              <div class="bar">
-                <div class="html"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>Javascript</h6>
-                <h6 class="percent">90%</h6>
-              </div>
-              <div class="bar">
-                <div class="js"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>Laravel</h6>
-                <h6 class="percent">85%</h6>
-              </div>
-              <div class="bar">
-                <div class="laravel"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-title">
-                <h6>React JS</h6>
-                <h6 class="percent">90%</h6>
-              </div>
-              <div class="bar">
-                <div class="react"></div>
-              </div>
+            <div class="about-image">
+              <img src="images/about.jpg" alt="Dimas Abimanyu" />
             </div>
           </div>
         </section>
-
         <!-- Portfolio Section -->
         <section id="portfolio">
           <h3 class="section-title">
@@ -164,15 +96,23 @@
             <!-- Project 1  -->
             <div class="project">
               <div class="project-thumbnail">
-                <img src="images/netflix clone.png" alt="Project 1" />
-                <h6 class="project-name">Netflix Clone</h6>
+                <img src="images/project-1.jpg" alt="Project 1" />
+                <h6>Traversy Media</h6>
               </div>
               <div class="project-desc">
-                <h4>Netflix Clone</h4>
-                <p>A Netflix clone built using React and TMDb Api. You can also watch the movie trailer that is linked directly via youtube (if trailer available).</p>
+                <h4>Traversy Media</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nesciunt et repudiandae incidunt. Laboriosam culpa
+                  consequuntur obcaecati itaque soluta commodi vel!
+                </p>
                 <div class="proj-btn">
-                  <a href="https://netflix-clone-4c217.web.app/" class="btn btn-sm blue-border">Live Preview</a>
-                <a href="https://github.com/dimasabimanyy/netflix-clone" class="btn btn-sm">See Code</a>
+                  <a href="#" class="btn btn-blue">Live Preview</a>
+                  <a
+                    href="https://github.com/dimasabimanyy/netflix-clone"
+                    class="btn"
+                    >See Code</a
+                  >
                 </div>
               </div>
             </div>
@@ -180,15 +120,27 @@
             <!-- Project 2 -->
             <div class="project">
               <div class="project-thumbnail">
-                <img src="images/covid tracker.png" alt="Project 2" />
-                <h6 class="project-name">Covid Tracker</h6>
+                <img src="images/project-2.jpg" alt="Project 2" />
+                <h6>Night Coder</h6>
               </div>
               <div class="project-desc">
-                <h4>Covid Tracker</h4>
-                <p>A website that provides information about covid 19 cases around the world. The data sourced from disease.sh api and displayed in chart with chart.js.</p>
-                <div class="proj-btn">
-                  <a href="https://covid-tracker-53d64.web.app/" class="btn btn-sm blue-border">Live Preview</a>
-                <a href="https://github.com/dimasabimanyy/covid-19-tracker" class="btn btn-sm">See Code</a>
+                <h4>Night Coder</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum laudantium nam explicabo quo tempora nisi commodi
+                  molestias inventore consequuntur dolorem!
+                </p>
+                <div>
+                  <a
+                    href="https://covid-tracker-53d64.web.app/"
+                    class="btn btn-blue"
+                    >Live Preview</a
+                  >
+                  <a
+                    href="https://github.com/dimasabimanyy/covid-19-tracker"
+                    class="btn"
+                    >See Code</a
+                  >
                 </div>
               </div>
             </div>
@@ -196,15 +148,27 @@
             <!-- Project 3 -->
             <div class="project">
               <div class="project-thumbnail">
-                <img src="images/hotel reservation.png" alt="Project 3" />
-                <h6 class="project-name">Hotel Reservation</h6>
+                <img src="images/project-3.jpg" alt="Project 3" />
+                <h6>Programming with Mosh</h6>
               </div>
               <div class="project-desc">
-                <h4>Hotel Reservation</h4>
-                <p>A website for booking hotel rooms online and by telephone. Built with React js and Contentful headless CMS to store the data. I also use styled component to style the front end.</p>
+                <h4>Programming with Mosh</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam odio labore dicta magnam vel ea animi quo provident?
+                  Architecto voluptatem est dignissimos.
+                </p>
                 <div class="proj-btn">
-                  <a href="https://erios-hotel-f25ec.web.app/" class="btn btn-sm blue-border">Live Preview</a>
-                <a href="https://github.com/dimasabimanyy/hotel-reservation" class="btn btn-sm">See Code</a>
+                  <a
+                    href="https://erios-hotel-f25ec.web.app/"
+                    class="btn btn-blue"
+                    >Live Preview</a
+                  >
+                  <a
+                    href="https://github.com/dimasabimanyy/hotel-reservation"
+                    class="btn"
+                    >See Code</a
+                  >
                 </div>
               </div>
             </div>
@@ -212,90 +176,61 @@
             <!-- Project 4 -->
             <div class="project">
               <div class="project-thumbnail">
-                <img src="images/v4.png" alt="Project 4" />
-                <h6 class="project-name">Portfolio v4</h6>
+                <img src="images/project-4.jpg" alt="Project 4" />
+                <h6>Web Dev Simplified</h6>
               </div>
               <div class="project-desc">
-                <h4>Portfolio v4</h4>
-                <p>Forth iteration of my personal portfolio website. Built with Gatsby and Strapi CMS to store the data, hosted with netlify.</p>
+                <h4>Web Dev Simplified</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores temporibus quidem quos dicta harum unde facere
+                  dolorem cum, doloribus tempora, tenetur dignissimos similique.
+                </p>
                 <div class="proj-btn">
-                  <a href="https://dimasabimanyuv4.netlify.app/" class="btn btn-sm blue-border">Live Preview</a>
-                <a href="https://github.com/dimasabimanyy/v4" class="btn btn-sm">See Code</a>
+                  <a
+                    href="https://dimasabimanyuv4.netlify.app/"
+                    class="btn btn-blue"
+                    >Live Preview</a
+                  >
+                  <a href="https://github.com/dimasabimanyy/v4" class="btn"
+                    >See Code</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- Contact section -->
         <section id="contact">
           <h3 class="section-title">
             Contact
             <div class="grey-line"><div class="blue-fill"></div></div>
           </h3>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63729.431807688925!2d99.11910688942835!3d3.3280663797566588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303161afa64fb9a7%3A0x83c2d37addf7fbfc!2sKota%20Tebing%20Tinggi%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1599347697828!5m2!1sid!2sid"
-              width="100%"
-              height="350"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
           <div class="contact-wrapper">
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fas fa-mobile-alt fa-2x"></i>
-                <div class="contact-info">
-                  <h5>Phone</h5>
-                  <p>
-                    +62 882-6016-7033
-                  </p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-street-view fa-2x"></i>
-                <div class="contact-info">
-                  <h5>Address</h5>
-                  <p>
-                    Medan, North Sumatra, Indonesia
-                  </p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="far fa-envelope fa-2x"></i>
-                <div class="contact-info">
-                  <h5>Email</h5>
-                  <p>
-                    dmsabmny@gmail.com
-                  </p>
-                </div>
-              </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63729.431807688925!2d99.11910688942835!3d3.3280663797566588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303161afa64fb9a7%3A0x83c2d37addf7fbfc!2sKota%20Tebing%20Tinggi%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1599347697828!5m2!1sid!2sid"
+                width="100%"
+                height="350"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
-
             <!-- Form Contact Section -->
             <div>
-              <h3 class="section-title">
-                How Can I Help You ?
-                <div class="grey-line"><div class="blue-fill"></div></div>
-              </h3>
-
               <form class="contact-form">
-                <div>
-                    <input type="text" placeholder="Full Name" class="name" />
-                    <input type="text" placeholder="Email Address" class="email" />
-                    <input type="text" placeholder="Subject" />
-                </div>
-                <div>
-                    <textarea placeholder="Message"></textarea>
-                </div>
-                <div class="btn-send">
-                    <a href="" class="btn blue-border btn-send">Send Message</a>
-                </div>
+                <input type="text" placeholder="Full Name" class="name" />
+                <input type="text" placeholder="Email Address" class="email" />
+                <input type="text" placeholder="Subject" />
+                <textarea placeholder="Message"></textarea>
+                <a href="" class="btn btn-blue">Send Message</a>
               </form>
             </div>
+          </div>
         </section>
       </main>
 
@@ -304,13 +239,17 @@
         <div class="footer-wrapper container">
           <ul class="social-media">
             <li><a href="https://github.com/dimasabimanyy/">Github</a></li>
-            <li><a href="https://www.instagram.com/dimasabimanyy_/">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/dimasabimanyu/">LinkedIn</a></li>
+            <li>
+              <a href="https://www.instagram.com/dimasabimanyy_/">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dimasabimanyu/">LinkedIn</a>
+            </li>
           </ul>
-          <p>&copy; All rights reserved. Dimas Abimanyu.</p>
+          <p>&copy; Dimas Abimanyu 2020</p>
         </div>
       </footer>
-    </section>
+    </div>
 
     <!-- Font awesome -->
     <script

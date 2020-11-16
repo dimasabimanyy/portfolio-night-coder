@@ -1,25 +1,21 @@
-@media screen and (max-width: 1250px) {
-  .main-container {
-    width: 95%;
-  }
-}
-
 @media screen and (max-width: 1000px) {
-  .main-container {
+  /* .main-container {
     margin: 2em auto;
-  }
-  .project {
+  } */
+  /* .project {
     height: 350px;
-  }
+  } */
 
   #hero {
     width: 90%;
-    grid-template-columns: 40% 60%;
   }
 }
 
 @media screen and (max-width: 850px) {
   /* Nav */
+  nav {
+    padding: 1.5rem 0;
+  }
   .nav-links {
     position: absolute;
     width: 100%;
@@ -67,26 +63,30 @@
   }
 
   #hero {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 1em;
   }
 
-  .my-image {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  #about {
+  .hero-image {
     text-align: center;
-    width: 100%;
   }
 
-  .btn-about-wrap {
-    margin: 0 auto;
+  .hero-image img {
+    width: 50%;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-info h1 {
+    margin-bottom: 0;
+  }
+  .hero-info-btn {
+    justify-content: center;
   }
 
-  #skills {
-    gap: 4em;
+  .about-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -114,37 +114,32 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width: 750px) {
-  #hero,
-  #skills,
-  #portfolio,
-  #contact {
-    padding: 4em 0;
+@media screen and (max-width: 768px) {
+  section {
+    padding: 3rem 0;
   }
-
-  #skills,
+  .hero-info {
+    padding: 0;
+  }
   .portfolio-wrapper,
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
 
   .portfolio-wrapper {
-    gap: 3em;
+    gap: 2rem;
   }
   .project {
-    height: 600px;
+    min-height: 500px;
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
   }
-
   .project-thumbnail {
-    height: 300px;
+    height: 250px;
   }
-
   .project-desc {
-    height: 50%;
+    height: 40%;
     position: relative;
     opacity: 1;
-    z-index: 999;
   }
 
   .footer-wrapper {
@@ -153,6 +148,6 @@
   }
 
   .social-media {
-    margin: 0 auto 1em;
+    margin: 0 auto 0.8rem;
   }
 }
