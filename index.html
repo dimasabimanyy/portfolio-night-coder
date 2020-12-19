@@ -5,36 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dimas Abimanyu - Software Engineer</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Font awesome -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Meta tag -->
   </head>
   <body>
     <div class="main-container">
       <!-- Header -->
-      <header>
+      <header class="container">
+        <!-- <nav class="header-wrapper container">
+          <a href="/" class="logo">
+            <h4>Dimas <span>Abimanyu</span></h4>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav> -->
+
         <nav>
-          <div class="nav-wrapper container">
-            <h4 class="logo">Dimas <span>Abimanyu</span></h4>
-            <ul class="nav-links">
-              <div class="nav-links-wrap">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </div>
-            </ul>
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <a href="/" class="logo">
+              <h4>Dimas <span>Abimanyu</span></h4>
+            </a>
+          </div>
+
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
 
+        <!-- Hero -->
         <section id="hero">
           <div class="hero-image">
             <img src="images/me.jpg" alt="Dimas Abimanyu" />
@@ -57,6 +74,7 @@
 
       <!-- Main Content -->
       <main class="container">
+        <!-- About -->
         <section id="about">
           <h3 class="section-title">
             About me
@@ -86,7 +104,8 @@
             </div>
           </div>
         </section>
-        <!-- Portfolio Section -->
+
+        <!-- Portfolio -->
         <section id="portfolio">
           <h3 class="section-title">
             Portfolio
@@ -106,7 +125,7 @@
                   Nesciunt et repudiandae incidunt. Laboriosam culpa
                   consequuntur obcaecati itaque soluta commodi vel!
                 </p>
-                <div class="proj-btn">
+                <div class="project-btn">
                   <a href="#" class="btn btn-blue">Live Preview</a>
                   <a
                     href="https://github.com/dimasabimanyy/netflix-clone"
@@ -158,7 +177,7 @@
                   Veniam odio labore dicta magnam vel ea animi quo provident?
                   Architecto voluptatem est dignissimos.
                 </p>
-                <div class="proj-btn">
+                <div class="project-btn">
                   <a
                     href="https://erios-hotel-f25ec.web.app/"
                     class="btn btn-blue"
@@ -186,7 +205,7 @@
                   Asperiores temporibus quidem quos dicta harum unde facere
                   dolorem cum, doloribus tempora, tenetur dignissimos similique.
                 </p>
-                <div class="proj-btn">
+                <div class="project-btn">
                   <a
                     href="https://dimasabimanyuv4.netlify.app/"
                     class="btn btn-blue"
@@ -220,14 +239,37 @@
                 tabindex="0"
               ></iframe>
             </div>
-            <!-- Form Contact Section -->
+            <!-- Contact Form -->
             <div>
-              <form class="contact-form">
-                <input type="text" placeholder="Full Name" class="name" />
-                <input type="text" placeholder="Email Address" class="email" />
-                <input type="text" placeholder="Subject" />
-                <textarea placeholder="Message"></textarea>
-                <a href="" class="btn btn-blue">Send Message</a>
+              <form
+                class="contact-form"
+                action="https://formspree.io/f/myybnojp"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="name"
+                  name="name"
+                />
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="email"
+                  name="email"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  class="subject"
+                />
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  class="message"
+                ></textarea>
+                <button type="submit" class="btn btn-blue">Send Message</button>
               </form>
             </div>
           </div>

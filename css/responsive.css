@@ -1,71 +1,13 @@
 @media screen and (max-width: 1000px) {
-  /* .main-container {
-    margin: 2em auto;
-  } */
-  /* .project {
-    height: 350px;
-  } */
-
   #hero {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 850px) {
-  /* Nav */
-  nav {
-    padding: 1.5rem 0;
-  }
-  .nav-links {
-    position: absolute;
-    width: 100%;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-    z-index: 9;
-  }
-
-  .nav-links-wrap {
-    height: 60%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-links-wrap li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-    z-index: 99;
-  }
-  /* Nav end */
-
-  .main-container {
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-  }
-
   #hero {
-    width: 100%;
     grid-template-columns: 1fr;
-    gap: 1em;
+    gap: 1rem;
   }
 
   .hero-image {
@@ -75,67 +17,40 @@
   .hero-image img {
     width: 50%;
   }
+
   .hero-info {
     text-align: center;
   }
+
   .hero-info h1 {
     margin-bottom: 0;
   }
+
   .hero-info-btn {
     justify-content: center;
   }
-
-  .about-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media screen and (max-width: 768px) {
-  section {
-    padding: 3rem 0;
-  }
   .hero-info {
     padding: 0;
   }
+
   .portfolio-wrapper,
+  .about-wrapper,
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
 
-  .portfolio-wrapper {
-    gap: 2rem;
-  }
   .project {
     min-height: 500px;
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
   }
+
   .project-thumbnail {
     height: 250px;
   }
+
   .project-desc {
     height: 40%;
     position: relative;
